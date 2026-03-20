@@ -1,17 +1,100 @@
-# Pan-Tilt-Head-Robot-With-Camera-Objects-and-Faces-Detection-Using-OpenCV-and-Python
-I)Description:
-The Pan-Tilt-Head-Robot aims to detect and track objects and faces. It consists of a Pan-tilt-head system, a camera and an Arduino board. 
+# 🤖 Pan-Tilt Head Robot with Camera  
+### Object & Face Detection and Tracking using OpenCV
 
--The Pan-tilt-head is composed by two servo motors. It help the camera to stay centered upon an object. 
+> 🎯 Phase 1 of an Autonomous Robot Arm for assisting people with reduced mobility
 
--The Camera is attached to the pan-tilt-head in order to take pictures instantaneously. 
+---
 
--The Computer treats the images from the camera. After that, it sends the decisions to the Arduino board. 
+## 📌 Overview
 
--The Arduino board receives the decisions from the computer and sends commands that makes the first servo pan left or right and makes the second servo tilt up or down. 
+This project presents a **Pan-Tilt Head Robot** capable of detecting and tracking objects and human faces using computer vision.
 
-To program this Robot, i used Arduino, python and OpenCV (the OPEN source Computer Vision library for image processing).
+The system combines **hardware (servo motors + Arduino)** and **software (Python + OpenCV)** to automatically adjust the camera position and keep the target centered.
 
+---
 
-Useful tutorial for Ball tracking : https://www.pyimagesearch.com/2015/09...
-Useful tutorial for Face tracking : https://towardsdatascience.com/real-t...
+## 🎥 Demo
+
+See the Pan-Tilt Robot detecting and tracking objects in real-time:
+
+[![Watch the demo](https://img.youtube.com/vi/yPaVLf3wQvo/0.jpg)](https://www.youtube.com/watch?v=yPaVLf3wQvo)
+
+## 🚀 Objective
+
+- Detect faces and objects in real-time
+- Track the target dynamically
+- Control camera movement using servo motors
+- Build the foundation for an assistive robotic system
+
+---
+
+## 🧠 Project Context
+
+This project represents **Phase 1** of a larger system:
+
+### 👉 Autonomous Robot Arm (Main Project)
+
+An intelligent robotic arm designed to assist people with reduced mobility to:
+- 🍽️ Eat
+- 🥤 Drink
+- 💊 Take medication
+
+📅 Aug 2020 – Jul 2021
+
+The Pan-Tilt system was developed as the **vision and tracking module** for this robotic arm.
+
+---
+
+## 🏗️ System Architecture
+
+### 🔄 Workflow
+
+1. 📷 Camera captures real-time video
+2. 🧠 Computer processes frames using OpenCV
+3. 🎯 Object/Face is detected
+4. 📡 Coordinates are calculated
+5. 🔁 Commands are sent to Arduino
+6. ⚙️ Servo motors adjust camera position (pan & tilt)
+
+---
+
+## ⚙️ Components
+
+### 🔵 Hardware
+- Arduino Uno
+- 2x Servo Motors (Pan & Tilt)
+- Camera Module
+- Pan-Tilt Mechanism
+
+### 🔵 Software
+- Python
+- OpenCV
+- Arduino IDE
+
+---
+
+## 🛠️ Technologies Used
+
+- Computer Vision (OpenCV)
+- Embedded Systems
+- Serial Communication (Python ↔ Arduino)
+- Real-time Image Processing
+
+---
+## 📚 References & Learning Resources
+
+This project was built with the help of the following tutorials and articles:
+
+- 🎯 Adrian Rosebrock — *Ball Tracking with OpenCV*  
+  https://www.pyimagesearch.com/2015/09/14/ball-tracking-with-opencv/
+
+- 👤 Towards Data Science — *Real-Time Object Detection with OpenCV*  
+  https://towardsdatascience.com/real-time-object-detection-with-opencv-python-8b2c4c1c0b64
+  
+
+## 📂 Project Structure
+
+```bash
+.
+├── Objects_and_Faces_Tracking/   # Main tracking scripts
+├── README.md
